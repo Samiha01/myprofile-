@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Browser</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="" />
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="images/favicon.png" />
+
+        <!-- Bootstrap Style -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <!-- Awesome Icon -->
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+        <!-- Style -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body class="index-developer">
+        <!--Header section-->
+        <header class="site-header py-lg-0">
+            <nav class="navbar navbar-light navbar-expand-lg py-0" aria-label="navbar">
+                <div class="container">
+                    <a class="navbar-brand py-0" href="index.html">
+                        <img src="images/bootstrap-logo.svg" alt="" width="40" height="30">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars0" aria-controls="navbars0" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-lg-center" id="navbars0">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Course</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                    <li><a class="dropdown-item" href="https://www.zybooks.com/" target="_blank">ZyBooks</a></li>
+                                    <li><a class="dropdown-item" href="https://tophat.com/" target="_blank">TopHat</a></li>
+                                    <li><a class="dropdown-item" href="https://drive.google.com/open?id=1AsHhIFfQ3yNE_m2z4wswRfKh77K0UH9w" target="_blank">Course Google Drive</a></li>
+                                    <li><a class="dropdown-item" href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                                    <li><a class="dropdown-item" href="developer.html">About The Developer</a></li>
+                                    <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="browser.html" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Browser</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                                    <li><a class="dropdown-item" href="browser.html#navigator">Navigator</a></li>
+                                    <li><a class="dropdown-item" href="browser.html#window">Window</a></li>
+                                    <li><a class="dropdown-item" href="browser.html#screen">Screen</a></li>
+                                    <li><a class="dropdown-item" href="browser.html#geolocation">Location</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">Search</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                                    <li><a class="dropdown-item" href="fromFile.html">From File</a></li>
+                                    <li><a class="dropdown-item" href="googleAPI.html">Google API</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-expanded="false">Project</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown05">
+                                    <li><a class="dropdown-item" href="parse.php">Parse</a></li>
+                                    <li><a class="dropdown-item" href="report.php">Report</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--End Header section-->
+
+        <!--Main Content-->
+        <main class="main-content mt-4 mt-lg-5">
+            <!--Content section-->
+            <section class="video-section section">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-9 main-col">
+                            <div class="row g-4">
+                                <div id="navigator" class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="content-section bg-block">
+                                        <h2 class="headline">Navigator</h2>
+
+                                        <ul class="content-list">
+                                            <li>
+                                                <span class="title">App Name</span>
+                                                <span class="value" id="appname"></span>
+                                            </li>
+                                            <li>
+                                                <span class="title">Product</span>
+                                                <span class="value" id="product"></span>
+                                            </li>
+                                            <li>
+                                                <span class="title">App Version</span>
+                                                <span class="value" id="appversion"></span>
+                                            </li>
+                                            <li>
+                                                <span class="title">User Agent</span>
+                                                <span class="value" id="useragent"></span>
+                                            </li>
+                                            <li>
+                                                <span class="title">Platform</span>
+                                                <span class="value" id="platform"></span>
+                                            </li>
+                                            <li>
+                                                <span class="title">Language</span>
+                                                <span class="value" id="language"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div id="window" class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="content-section bg-block">
+                                        <h2 class="headline">Window</h2>
+
+                                        <ul class="content-list">
+                                            <li>
+                                                <span class="title">Inher Height</span>
+                                                <span class="value" id="innerheight"></span>
+                                            </li>
+                                            <li>
+                                                <span class="title">Inner Width</span>
+                                                <span class="value" id="innerwidth"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div id="screen" class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="content-section bg-block">
+                                        <h2 class="headline">Screen</h2>
+
+                                        <ul class="content-list">
+                                            <li>
+                                                <span class="title">Width</span>
+                                                <span class="value" id="width"></span>
+                                            </li>
+                                            <li>
+                                                <span class="title">Height</span>
+                                                <span class="value" id="height"></span>
+                                            </li>
+                                            <li>
+                                                <span class="title">Avail Width</span>
+                                                <span class="value" id="availwidth"></span>
+                                            </li>
+                                            <li>
+                                                <span class="title">Avail Height</span>
+                                                <span class="value" id="availheight"></span>
+                                            </li>
+                                            <li>
+                                                <span class="title">Color Depth</span>
+                                                <span class="value" id="colordepth"></span>
+                                            </li>
+                                            <li>
+                                                <span class="title">Pixel Depth</span>
+                                                <span class="value" id="pixeldepth"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div id="location" class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="content-section bg-block">
+                                        <h2 class="headline">Location</h2>
+
+                                        <ul class="content-list">
+                                            <li>
+                                                <span class="title">Href</span>
+                                                <span class="value" id="href"></span>
+                                            </li>
+                                            <li>
+                                                <span class="title">Host Name</span>
+                                                <span class="value" id="hostname"></span>
+                                            </li>
+                                            <li>
+                                                <span class="title">Path Name</span>
+                                                <span class="value" id="pathname"></span>
+                                            </li>
+                                            <li>
+                                                <span class="title">Protocol</span>
+                                                <span class="value" id="protocol"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div id="geolocation" class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="content-section bg-block">
+                                        <h2 class="headline">Geolocation</h2>
+
+                                        <ul class="content-list">
+                                            <li>
+                                                <span class="title">Latitude</span>
+                                                <span class="value" id="latitude"></span>
+                                            </li>
+                                            <li>
+                                                <span class="title">Longitude</span>
+                                                <span class="value" id="longitude"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--End Content section -->
+        </main>
+        <!--End Main Content-->
+
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Custom JS -->
+        <script src="js/main.js"></script>
+        <script>
+            document.getElementById('appname').textContent = navigator.appName;
+            document.getElementById('platform').textContent = navigator.platform;
+            document.getElementById('language').textContent = navigator.language;
+            document.getElementById('useragent').textContent = navigator.userAgent;
+            document.getElementById('appversion').textContent = navigator.appVersion;
+            document.getElementById('product').textContent = navigator.product;
+
+            document.getElementById('innerheight').textContent = window.innerHeight;
+            document.getElementById('innerwidth').textContent = window.innerWidth;
+
+            document.getElementById('height').textContent = screen.height;
+            document.getElementById('width').textContent = screen.width;
+            document.getElementById('availheight').textContent = screen.availHeight;
+            document.getElementById('availwidth').textContent = screen.availWidth;
+            document.getElementById('colordepth').textContent = screen.colorDepth;
+            document.getElementById('pixeldepth').textContent = screen.pixelDepth;
+
+            document.getElementById('href').textContent = location.href;
+            document.getElementById('hostname').textContent = location.hostname;
+            document.getElementById('pathname').textContent = location.pathname;
+            document.getElementById('protocol').textContent = location.protocol;
+
+            (function()
+            {
+                navigator.geolocation.getCurrentPosition(function(pos)
+                    {
+                        document.getElementById('longitude').textContent = pos.coords.longitude;
+                        document.getElementById('latitude').textContent = pos.coords.latitude;
+                    });
+            })();
+
+            window.addEventListener("resize" , function()
+            {
+                document.getElementById('innerheight').textContent = window.innerHeight;
+                document.getElementById('innerwidth').textContent = window.innerWidth;
+            });
+        </script>
+    </body>
+</html>
